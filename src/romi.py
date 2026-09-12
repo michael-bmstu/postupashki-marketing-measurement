@@ -9,7 +9,8 @@ ROMI_attr = (attributed_value − cost) / cost,  attributed_value = attributed_r
       - opportunity: cost = упущенная выручка от продажи рекламного слота (ASSUMPTION 20 000 ₽/пост).
   * CAC = cost / attributed_orders;  payback = cost / attributed_revenue.
 
-ROMI_inc (инкрементальный) здесь НЕ считается: для него нужен эксперимент (см. docs/experiments.md, uplift.py).
+ROMI_inc (инкрементальный) здесь НЕ считается: для него нужен эксперимент
+(см. docs/incrementality-experiments.md, uplift.py).
 
 Выход: data/processed/romi_by_placement.csv, romi_by_channel.csv, romi_by_campaign.csv, romi_sensitivity.csv
        figures/fig6_romi_by_placement.png

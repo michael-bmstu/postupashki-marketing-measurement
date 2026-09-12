@@ -2,7 +2,7 @@
 
 Локальная система измерения маркетинга для Telegram. Batch-пайплайн готовит витрину и аналитические результаты, а Telegram-бот собирает новые касания и лиды с источником размещения.
 
-Презентационные выводы исходного кейса находятся в [case study](docs/case_study.md), все исследования и методические материалы собраны в [оглавлении `docs/`](docs/README.md).
+Презентационные выводы исходного кейса находятся в [результатах исследования](docs/research-results.md), все исследования и методические материалы собраны в [оглавлении `docs/`](docs/README.md).
 
 ## Постановка задачи
 
@@ -24,7 +24,7 @@
 
 ## Данные и assumptions
 
-Входные продажи находятся в `data/raw/base.xlsx`, сохранённые Telegram-посты — в `data/collected/`. Пересобираемые результаты пишутся в `data/processed/`, `figures/` и `reports/`; демонстрационные расходы и касания — в `data/synthetic/`. Исследовательские выводы собраны в [case study](docs/case_study.md), структура витрины — в [описании модели данных](docs/data_model.md), численные результаты последнего запуска — в [сводке пайплайна](reports/summary.md).
+Входные продажи находятся в `data/raw/base.xlsx`, сохранённые Telegram-посты — в `data/collected/`. Пересобираемые результаты пишутся в `data/processed/`, `figures/` и `reports/`; демонстрационные расходы и касания — в `data/synthetic/`. Исследовательские выводы собраны в [результатах исследования](docs/research-results.md), структура витрины — в [описании модели данных](docs/marketing-data-model.md), численные результаты последнего запуска — в [сводке пайплайна](reports/summary.md).
 
 Подробное назначение слоёв описано в [разделе 5.1](agents_docs/ARCHITECTURE.md#51-файловые-слои), зерно таблиц — в [разделе 5.2](agents_docs/ARCHITECTURE.md#52-основные-зерна). Правила атрибуции, ROMI, uplift и прогноза находятся в [разделе 6](agents_docs/ARCHITECTURE.md#6-алгоритмические-правила).
 
@@ -35,7 +35,7 @@
 - даты маркетинговых волн заданы в коде;
 - исторические касания, внешние размещения и их стоимость синтетические, поэтому текущий ROMI является демонстрационным.
 
-Полный список допущений исходного анализа сохранён в [case study](docs/case_study.md#8-assumptions-и-как-их-проверить).
+Полный список допущений исходного анализа сохранён в [результатах исследования](docs/research-results.md#8-assumptions-и-как-их-проверить).
 
 ## Установка окружения
 
@@ -105,7 +105,7 @@ uv run python src/attribution.py --window 7 14 30
 uv run python src/romi.py --model position --window 14 --margin 0.7
 ```
 
-Допустимые модели и фактическое поведение приведены в разделах [6.1 «Атрибуция»](agents_docs/ARCHITECTURE.md#61-атрибуция) и [6.2 «ROMI»](agents_docs/ARCHITECTURE.md#62-romi); обоснование методики — в [исследовании атрибуции](docs/attribution.md).
+Допустимые модели и фактическое поведение приведены в разделах [6.1 «Атрибуция»](agents_docs/ARCHITECTURE.md#61-атрибуция) и [6.2 «ROMI»](agents_docs/ARCHITECTURE.md#62-romi); обоснование методики — в [исследовании атрибуции и ROMI](docs/attribution-and-romi.md).
 
 ## Запуск Telegram-бота
 
@@ -194,8 +194,8 @@ uv run python src/tracking_bot.py --simulate
 
 - [Оглавление исследований и результатов](docs/README.md)
 - [Архитектура](agents_docs/ARCHITECTURE.md)
-- [Модель данных](docs/data_model.md)
-- [Спецификация трекинга](docs/tracking_spec.md)
-- [Атрибуция и ROMI](docs/attribution.md)
-- [Дизайн экспериментов](docs/experiments.md)
-- [Презентационный case study](docs/case_study.md)
+- [Модель маркетинговых данных](docs/marketing-data-model.md)
+- [Telegram-трекинг](docs/telegram-tracking.md)
+- [Атрибуция и ROMI](docs/attribution-and-romi.md)
+- [Эксперименты по инкрементальности](docs/incrementality-experiments.md)
+- [Результаты исследования](docs/research-results.md)
