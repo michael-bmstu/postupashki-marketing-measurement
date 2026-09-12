@@ -4,8 +4,8 @@
 
 ## Готовые материалы
 
-- [Executive summary, PDF](executive_summary.pdf) — двухстраничная управленческая сводка.
-- [Презентация, PDF](presentation.pdf) — презентационная версия результатов кейса.
+- [Executive summary, PDF](docs/executive_summary.pdf) — двухстраничная управленческая сводка.
+- [Презентация, PDF](docs/presentation.pdf) — презентационная версия результатов кейса.
 
 ## Статус проекта
 
