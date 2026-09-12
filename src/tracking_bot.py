@@ -39,29 +39,9 @@ from common import PROCESSED, SYNTHETIC
 DB = PROCESSED / "pmm.sqlite"
 SALT = os.environ.get("PMM_SALT", "postupashki-hackathon-demo-salt")
 BOT_USERNAME = os.environ.get("BOT_USERNAME", "PostupashkiTrackBot")
-MANAGER_LINK = os.environ.get("MANAGER_LINK", "https://t.me/m/p94YcePXNjcy")  # реальная ссылка из постов канала
+MANAGER_LINK = os.environ.get("MANAGER_LINK", "https://t.me/manager_username")
 PAYLOAD_RE = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
 COURSES = ["Аналитика ПРО", "ML ПРО", "AI агенты ПРО", "Backend ПРО", "Алгоритмы ПРО", "СТАРТ (любой)"]
-
-"""
-BOT_USERNAME='SQLoutsideindustrybot' \
-BOT_TOKEN='8897074854:AAE7Rjlj5rRTc8Wie2FkNhnu_lHMc7qDRAs' \
-MANAGER_LINK='https://t.me/kornelikkk' \
-MANAGER_CHAT_ID='878623702' \
-uv run python src/tracking_bot.py
-
-export BOT_TOKEN='8897074854:AAE7Rjlj5rRTc8Wie2FkNhnu_lHMc7qDRAs'
-
-curl --silent \
-  "https://api.telegram.org/bot${BOT_TOKEN}/getUpdates" |
-jq '.result[] | {
-  username: .message.from.username,
-  user_id: .message.from.id,
-  chat_id: .message.chat.id,
-  text: .message.text
-}'
-
-"""
 
 def hash_id(value: str | int) -> str:
     return hashlib.sha256(f"{value}:{SALT}".encode()).hexdigest()[:16]

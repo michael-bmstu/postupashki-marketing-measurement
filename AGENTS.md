@@ -6,6 +6,7 @@
 - [`agents_docs/PRODUCT.md`](agents_docs/PRODUCT.md) owns product scope, users, workflows, and MVP boundaries.
 - [`agents_docs/ARCHITECTURE.md`](agents_docs/ARCHITECTURE.md) owns the current pipeline, interfaces, and failures.
 - [`agents_docs/DECISIONS.md`](agents_docs/DECISIONS.md) owns accepted decisions and rationale.
+- [`docs/experiment-catalog.md`](docs/experiment-catalog.md) owns the role, evidence, and promotion conditions of research and demo modules.
 
 Read the relevant authoritative document before work. Update only that document and link to it instead of duplicating stable details elsewhere.
 
@@ -16,6 +17,7 @@ For features, refactoring, or architectural changes:
 - Update `agents_docs/ARCHITECTURE.md` when the implemented structure, data flow, interfaces, lifecycle, or failure behavior changes.
 - Update `agents_docs/PRODUCT.md` when accepted product scope, user workflows, report semantics, or MVP boundaries change.
 - Record accepted technical choices and their rationale in `agents_docs/DECISIONS.md`; preserve superseded decisions as history.
+- Update `docs/experiment-catalog.md` when a module is promoted into or removed from the product path.
 - After implementation, align plan status and architecture with the actual result. For a numbered staged plan, move the completed stage to `Recently Completed` with a concise summary and validation results, move `(current)` to the next stage, and renumber the remaining stages from 1 without shortening or rewording them.
 - Validate changed links and diffs with the project's available checks.
 
