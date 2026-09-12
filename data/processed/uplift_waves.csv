@@ -1,0 +1,4 @@
+wave,start,end,observed_orders,expected_orders_baseline,naive_uplift_orders,uplift_ci95_low,uplift_ci95_high,observed_revenue,avg_order_rub,post_week_orders,post_week_expected,post_week_delta,note
+W1: распродажа СТАРТ (−35%),2026-08-08,2026-08-10,132,29.0,103.0,84.0,119.0,1004697,7611,57,62.6,-5.6,NOT causal: no control group; baseline = median of non-wave days × weekday index
+W2: запуск ПРО + AI агенты,2026-08-22,2026-08-24,84,29.0,55.0,36.0,71.0,829718,9878,88,62.6,25.4,NOT causal: no control group; baseline = median of non-wave days × weekday index
+W3: дедлайн Т-Банк (полная цена),2026-09-04,2026-09-06,120,22.6,97.4,82.0,107.0,1150344,9586,40,40.1,-0.1,NOT causal: no control group; baseline = median of non-wave days × weekday index

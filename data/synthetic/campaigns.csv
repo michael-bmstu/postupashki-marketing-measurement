@@ -1,0 +1,4 @@
+campaign_id,campaign_name,objective,product_line,start_date,end_date,data_origin
+cmp_2026-08_start_sale,Финальная распродажа СТАРТ,sale,СТАРТ,2026-08-07,2026-08-11,real (inferred from posts)
+cmp_2026-08_pro_launch,Запуск линейки ПРО + AI агенты,launch,ПРО,2026-08-22,2026-08-27,real (inferred from posts)
+cmp_2026-09_tbank_season,Сезон стажировок: разборы Т-Банк/Яндекс на курсах ПРО,native,ПРО,2026-08-28,2026-09-10,real (inferred from posts)

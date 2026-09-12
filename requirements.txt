@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+openpyxl>=3.1
+requests>=2.31
+# только для реального Telegram-бота (src/tracking_bot.py без --simulate):
+# aiogram>=3.4
+# только для сборки PDF-документов (src/make_docs.py):
+# reportlab>=4.0

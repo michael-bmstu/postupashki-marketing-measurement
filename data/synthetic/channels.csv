@@ -1,0 +1,7 @@
+channel_id,channel_name,channel_type,subscribers,data_origin
+own_tg_main,"Поступашки — ШАД, Стажировки и Магистратура (@postypashki_old)",own_tg,45000,real
+ext_tg_it_jobs,[SYNTHETIC] IT Jobs Digest,external_tg,60000,synthetic
+ext_tg_ds_memes,[SYNTHETIC] DS Memes,external_tg,120000,synthetic
+ext_tg_student_life,[SYNTHETIC] Student Life,external_tg,25000,synthetic
+ext_tg_ml_digest,[SYNTHETIC] ML Digest,external_tg,150000,synthetic
+ext_youtube_review,[SYNTHETIC] YouTube интеграция,youtube,80000,synthetic

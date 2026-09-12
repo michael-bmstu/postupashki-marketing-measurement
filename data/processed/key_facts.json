@@ -1,0 +1,122 @@
+{
+  "rows": 795,
+  "orders": 628,
+  "buyers": 606,
+  "courses": 18,
+  "period": "04.08.2026 – 10.09.2026",
+  "days": 38,
+  "revenue_total": 5904672,
+  "avg_order_total": 9402,
+  "median_order_total": 8950,
+  "avg_item_price": 7427,
+  "bundle_orders": 153,
+  "bundle_orders_pct": 24.4,
+  "bundle_revenue_pct": 35.9,
+  "repeat_buyers": 20,
+  "repeat_buyers_pct": 3.3,
+  "repeat_orders_revenue": 187575,
+  "repeat_gap_median_days": 14.9,
+  "repeat_gap_p75_days": 24.6,
+  "weekend_orders_pct": 47.9,
+  "peak_hours_msk": "14–19",
+  "baseline_orders_per_day_median": 9.0,
+  "baseline_revenue_per_day_median": 76690,
+  "top_day": {
+    "date": "2026-08-09",
+    "orders": 68,
+    "revenue": 524092
+  },
+  "waves": [
+    {
+      "wave": "W1: распродажа СТАРТ",
+      "start": "2026-08-08",
+      "end": "2026-08-10",
+      "days": 3,
+      "orders": 132,
+      "revenue": 1004697,
+      "orders_share_pct": 21.0,
+      "revenue_share_pct": 17.0,
+      "avg_order": 7611,
+      "avg_discount_pct": 35.4,
+      "bundle_share_pct": 32.6,
+      "orders_over_baseline": 105
+    },
+    {
+      "wave": "W2: запуск ПРО + AI агенты",
+      "start": "2026-08-22",
+      "end": "2026-08-24",
+      "days": 3,
+      "orders": 84,
+      "revenue": 829718,
+      "orders_share_pct": 13.4,
+      "revenue_share_pct": 14.1,
+      "avg_order": 9878,
+      "avg_discount_pct": 9.6,
+      "bundle_share_pct": 22.6,
+      "orders_over_baseline": 57
+    },
+    {
+      "wave": "W3: дедлайн стажировки Т-Банк",
+      "start": "2026-09-04",
+      "end": "2026-09-06",
+      "days": 3,
+      "orders": 120,
+      "revenue": 1150344,
+      "orders_share_pct": 19.1,
+      "revenue_share_pct": 19.5,
+      "avg_order": 9586,
+      "avg_discount_pct": 12.2,
+      "bundle_share_pct": 19.2,
+      "orders_over_baseline": 93
+    }
+  ],
+  "anomalies": {
+    "amount_le_1000": 3,
+    "amount_ge_15000_single_item": 4,
+    "same_course_twice": 3,
+    "unequal_split_orders": 1
+  },
+  "top_courses": [
+    {
+      "course": "Аналитика про",
+      "revenue": 740941.5,
+      "rev_share_pct": 12.5,
+      "buyers": 92
+    },
+    {
+      "course": "ML про",
+      "revenue": 715110.0,
+      "rev_share_pct": 12.1,
+      "buyers": 90
+    },
+    {
+      "course": "AI агенты",
+      "revenue": 711673.0,
+      "rev_share_pct": 12.1,
+      "buyers": 90
+    },
+    {
+      "course": "Аналитика старт",
+      "revenue": 641616.5,
+      "rev_share_pct": 10.9,
+      "buyers": 91
+    },
+    {
+      "course": "Алгоритмы старт",
+      "revenue": 529851.68,
+      "rev_share_pct": 9.0,
+      "buyers": 88
+    },
+    {
+      "course": "ML старт",
+      "revenue": 523278.33,
+      "rev_share_pct": 8.9,
+      "buyers": 80
+    }
+  ],
+  "ai_agents": {
+    "first_sale": "2026-08-22",
+    "revenue": 711673,
+    "rev_share_pct": 12.1
+  }
+}
