@@ -3,6 +3,7 @@
 ## Scope and documentation
 
 - [`PLANS.md`](PLANS.md) owns status and plans.
+- [`agents_docs/PRODUCT.md`](agents_docs/PRODUCT.md) owns product scope, users, workflows, and MVP boundaries.
 - [`agents_docs/ARCHITECTURE.md`](agents_docs/ARCHITECTURE.md) owns the current pipeline, interfaces, and failures.
 - [`agents_docs/DECISIONS.md`](agents_docs/DECISIONS.md) owns accepted decisions and rationale.
 
@@ -13,6 +14,7 @@ For features, refactoring, or architectural changes:
 - Before substantial implementation, update the current plan in `PLANS.md`.
 - Keep the plan focused on current work and immediate next steps. Preserve planned future stages and their details unless the user explicitly requests a revision.
 - Update `agents_docs/ARCHITECTURE.md` when the implemented structure, data flow, interfaces, lifecycle, or failure behavior changes.
+- Update `agents_docs/PRODUCT.md` when accepted product scope, user workflows, report semantics, or MVP boundaries change.
 - Record accepted technical choices and their rationale in `agents_docs/DECISIONS.md`; preserve superseded decisions as history.
 - After implementation, align plan status and architecture with the actual result. For a numbered staged plan, move the completed stage to `Recently Completed` with a concise summary and validation results, move `(current)` to the next stage, and renumber the remaining stages from 1 without shortening or rewording them.
 - Validate changed links and diffs with the project's available checks.
